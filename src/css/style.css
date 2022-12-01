@@ -2,9 +2,15 @@ main{
     background: linear-gradient(#5E77FF, #D9B4E5, #71BEDF, #FCC98D);
     
 }
-h2{
-    font-size: xx-large;
-    text-align: center;
+.titrehome{
+    font-family: 'Akronim';
+font-style: normal;
+font-weight: 400;
+font-size: 55px;
+line-height: 63px;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+text-align: center;
 }
 h1{
     text-align: center;
@@ -20,4 +26,56 @@ a{
     text-decoration: none;
     color: black;
 }
+.image{
+width: 321px;
+height: 167px;
+left: 25px;
+top: 568px;
+}
+.introduction{
+    width: 307px;
+height: 196px;
+left: 38px;
+top: 184px;
 
+/* texte article */
+
+font-family: 'Zilla slab';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+margin: auto;
+}
+.Nomsite{
+   
+
+top: 34.9%;
+bottom: 36.24%;
+
+/* Titre du site */
+
+font-family: 'Akronim';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 55px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu{
+    position: absolute;
+left: 85.27%;
+right: 3.36%;
+top: 30.2%;
+bottom: 42.95%;
+}
