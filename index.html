@@ -18,11 +18,17 @@
 <body>
   <header class="header">
     <p class="Nomsite">Trav-All</p>
-    <button @click="menuIsOpen = !menuIsOpen">
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
       <img src="./public/img/logo_menu.webp" alt="logo_menu">
     </button>
   </header>
-<nav x-show="menuIsOpen">
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
     <ul>
         <li><a href="#"> Lieu </a></li>
         <li><a href="#"> Musique </a></li>

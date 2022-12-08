@@ -2,7 +2,25 @@ header{
     background: linear-gradient(#a9003e, #FF005E); 
     
 }
-
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 217vw;
+    background: #FF005E;
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+  }
+.header_menuBtn {
+    position: relative;
+    z-index: 10;
+  }
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+  }
 .Nomsite{
     
    
