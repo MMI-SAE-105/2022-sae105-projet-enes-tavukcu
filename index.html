@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="dd1Open: false, dd2Open: true">
+<html lang="fr" x-data=" {menuIsOpen:false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Trav-All</title> 
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/media.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
     
-
+    
     
 </head>
 <body>
-    <header class="header">
-      <div flex>
-      <h1 class="Nomsite">Trav-All</h1>
-      
-        <img src="./public/img/menu.svg" alt="logo_menu" >
-        </div>
-      
+  <header class="header">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen">
+      <img src="./public/img/logo_menu.webp" alt="logo_menu">
+    </button>
+  </header>
+<nav x-show="menuIsOpen">
+    <ul>
+        <li><a href="#"> Lieu </a></li>
+        <li><a href="#"> Musique </a></li>
+        <li><a href="#"> Film </a></li>
+        <li><a href="#"> Livre </a></li>
+        <li><a href="#"> Regret </a></li>
+        <li><a href="#"> Espoir </a></li>
+    </ul>
+</nav>
     </header>
+
+    
+
+
+  
+
 
     <main class="main">
       <br>
@@ -31,7 +48,7 @@
      Bonjour et bienvenue sur mon site qui vous présentera plusieurs secteurs du monde du voyage. 
         En espérant que ça vous inspire pour votre avenir.</p>
 
-      <article><a href="page_lieu.html">
+      <article><a href="page_lieu.html" style="display: flex; flex-direction: column; align-items: center;"> 
         <h2 class="titrehome">Lieu</h2>  
         <img class="image1"  src="./public/img/accueil_lieu.webp" alt="image_lieu">
         
@@ -41,7 +58,7 @@
       </a></article>
 
 
-      <article><a href="page_musique.html">
+      <article><a href="page_musique.html" style="display: flex; flex-direction: column; align-items: center;"> 
         <h2 class="titrehome">Musique</h2>  
         <img class="image2"  src="./public/img/accueil_pnl.webp" alt="image_musique">
         
@@ -51,7 +68,7 @@
       </a></article>
 
 
-      <article><a href="page_film.html">
+      <article><a href="page_film.html" style="display: flex; flex-direction: column; align-items: center;"> 
       <h2 class="titrehome">Film</h2>  
         <img class="image3"  src="./public/img/accueil_film.webp" alt="image_film">
        
@@ -71,7 +88,7 @@
       </a></article>   
 
 
-      <article><a href="page_regret.html">
+      <article><a href="page_regret.html" style="display: flex; flex-direction: column; align-items: center;"> 
       <h2 class="titrehome">Regret</h2>  
         <img class="image5"   src="./public/img/accueil_regret.webp" alt="image_regret">
         
@@ -81,7 +98,7 @@
        </a></article>   
 
 
-      <article><a href="page_espoir.html"> 
+      <article><a href="page_espoir.html" style="display: flex; flex-direction: column; align-items: center;"> 
       <h2 class="titrehome">Espoir</h2>  
         <img class="image6"    src="./public/img/accueil_espoir.webp" alt="image_espoir">
         
