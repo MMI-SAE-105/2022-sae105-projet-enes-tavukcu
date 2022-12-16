@@ -9,33 +9,36 @@
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/media.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
     <style></style>
     
     
     
 </head>
-<body>
+<body class="body">
+
   <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
     <p class="Nomsite">Trav-All</p>
     <button @click="menuIsOpen = !menuIsOpen"
     class="header_menuBtn"
     aria-controle="mainNav">
-      <img src="./public/img/logo_menu.webp" alt="logo_menu">
-    </button>
-  </header>
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  </header>
 <nav 
 x-show="menuIsOpen"
 id="mainNav"
         x-transition.duration.650ms
         class="menu">
     <ul>
-        <li><a href="#"> Lieu </a></li>
-        <li><a href="#"> Musique </a></li>
-        <li><a href="#"> Film </a></li>
-        <li><a href="#"> Livre </a></li>
-        <li><a href="#"> Regret </a></li>
-        <li><a href="#"> Espoir </a></li>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
     </ul>
 </nav>
     </header>

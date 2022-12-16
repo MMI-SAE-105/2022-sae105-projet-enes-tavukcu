@@ -2,6 +2,12 @@ header{
     background: linear-gradient(#a9003e, #FF005E); 
     
 }
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -16,28 +22,34 @@ header{
 .header_menuBtn {
     position: relative;
     z-index: 10;
+    align-content: flex-end;
+    appearance: none;
+    outline: none;
+    border:none;
+    background: none;
+    margin-right: 5%;
+   
   }
+  .header__logo {
+    width:100px;
+  
+  }
+
 .noscroll,
 .noscroll body {
     overflow: hidden;
   }
-.Nomsite{
-    
-   
 
-        top: 34.9%;
-        bottom: 36.24%;
-        
-        /* Titre du site */
-        
+.Nomsite{
+
         font-family: 'Akronim';
         font-style: normal;
         font-weight: 400;
         font-size: 48px;
-        line-height: 55px;
-        
-        
+       margin-top: 10%;
+       text-transform: uppercase;
         text-align: center;
+  
         
         color: #FFFFFF;
         
