@@ -1,11 +1,23 @@
-header{
+.header{
     background: linear-gradient(#a9003e, #FF005E); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+    
+   
+    
+    
     
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
+  align-items: inherit;
+  
 }
 
 .menu {
@@ -27,7 +39,8 @@ header{
     outline: none;
     border:none;
     background: none;
-    margin-right: 5%;
+    
+    
    
   }
   .header__logo {
