@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" x-data=" {menuIsOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trav-All</title> 
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/media.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
+    
+    
+    
+    
+</head>
+<body class="body">
+
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="/public/img/menu.svg" alt="logo_menu">
+    </button> </div>  </header>
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+    <ul>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
+    </ul>
+</nav>
+    </header>
+
+    
+
+
+  
+
+
+    <main class="main">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+      <p class="introduction"> 
+        Hello and welcome to my site which will introduce you several sectors of the world of travel. 
+        Hope it inspires you for your future. </p>
+
+      <article><a href="page_lieu.html" style="display: flex; flex-direction: column; align-items: center;"> 
+        <h2 class="titrehome">Place</h2>  
+        <img class="image1"  src="/public/img/accueil_lieu.webp" alt="image_lieu">
+        
+            <p class="rectanglehome1">Immerse yourself in a heavenly place, see even unreal that will make you travel as soon as you set foot there with a discovery still unknown to your days.</p>
+        
+        <p class="voir">See more</p>
+      </a></article>
+
+
+      <article><a href="page_musique.html" style="display: flex; flex-direction: column; align-items: center;"> 
+        <h2 class="titrehome">Music</h2>  
+        <img class="image2"  src="/public/img/accueil_pnl.webp" alt="image_musique">
+       
+            <p class="rectanglehome2">
+                Come discover the two brothers , two artists who will make you travel through their music, you will be surprised how your mind and your emotions will jump between music and reality.</p>
+        
+        <p class="voir">See more</p>  
+      </a></article>
+
+
+      <article><a href="page_film.html" style="display: flex; flex-direction: column; align-items: center;"> 
+      <h2 class="titrehome">Movie</h2>  
+        <img class="image3"  src="/public/img/accueil_film.webp" alt="image_film">
+       
+            <p class="rectanglehome3">Doctor Strange will have to face the dangers of multiverse, in a trip of madness for this he will need help especially from America Chavez to fight the Scarlet Witch.</p>
+        
+        <p class="voir">See more</p>
+      </a></article>  
+
+
+      <article><a href="page_livre.html" style="display: flex; flex-direction: column; align-items: center;"> 
+      <h2 class="titrehome">Book</h2>  
+        <img class="image4"   src="/public/img/accueil_livre.webp" alt="image_livre">
+        
+            <p class="rectanglehome4">This book tells the story of a scientist, Professor Liedenbrock, and his nephew Axel, who discover the mysterious parchment that leads to a journey to the center of the Earth.</p>
+        
+        <p class="voir">See more</p> 
+      </a></article>   
+
+
+      <article><a href="page_regret.html" style="display: flex; flex-direction: column; align-items: center;"> 
+      <h2 class="titrehome">Regret</h2>  
+        <img class="image5"   src="/public/img/accueil_regret.webp" alt="image_regret">
+        
+            <p class="rectanglehome5">Pollution is an important factor of our generation, the emission of CO2 is significant because our atmosphere runs a great danger by threatening our environment.</p>
+      
+         <p class="voir">See more</p>
+       </a></article>   
+
+
+      <article><a href="page_espoir.html" style="display: flex; flex-direction: column; align-items: center;"> 
+      <h2 class="titrehome">Hope</h2>  
+        <img class="image6"    src="/public/img/accueil_espoir.webp" alt="image_espoir">
+        
+            <p class="rectanglehome6">Airplanes are a means of travel with such technology , with huge problems too , to remedy this , large modifications will be made in the future.</p>
+        
+        <p class="voir">See more</p>
+      </a></article>  
+    </main>
+
+
+<footer class="footer">
+  <div class="frang">
+    <div class="FR"> FR </div>
+    <div class="ANG"> ANG </div>
+  </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
+  <p class="mention">Disclaimer : </p>
+  <p class="legal">Project carried out as part of an educational exercise in the<a href="MMi de Montbéliard"> MMi de Montbéliard</a></p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="/public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
+</footer>
+    
+
+</body>
+
+</html>
+    
