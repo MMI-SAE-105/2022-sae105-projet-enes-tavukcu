@@ -10,16 +10,16 @@ footer a {
     text-decoration: underline;
 }
 .frang{
-    margin-left: 180px;
-    gap: var(--space3x);
+    padding-left: 14px;
+   font-size: larger;
     margin-top: 0px;
-    align-items: center;
+   justify-content: space-evenly;
     display: flex;
     
 }
 .mailto{
     margin-left: 40px;
-    margin-top: 2px;
+    
 }
 .mail{
     margin-left: 15px;
@@ -28,7 +28,9 @@ footer a {
     margin-left: 40px;
 }
 .legal{
-    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 55px;
+
 }
 .MMI{
     box-sizing: border-box;
@@ -36,5 +38,8 @@ footer a {
     gap: var(--space3x);
     align-items: center;
     margin-left: 190px;
+}
+.nom{
+    font-size: smaller;
 }
 
