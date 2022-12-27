@@ -15,6 +15,7 @@ footer a {
     margin-top: 0px;
    justify-content: space-evenly;
     display: flex;
+    padding-top: 10px;
     
 }
 .mailto{
@@ -38,6 +39,7 @@ footer a {
     gap: var(--space3x);
     align-items: center;
     margin-left: 190px;
+    padding-bottom: 5px;
 }
 .nom{
     font-size: smaller;
