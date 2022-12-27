@@ -279,5 +279,36 @@ text-align: left;
     margin:  auto;
     padding-bottom: 30px;
 }
+.img_esp_1{
+    max-width: 100%;
+    display: block;
+    width: 330px;
+    height: 200px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_esp_2{
+    max-width: 100%;
+    display: block;
+    width: 340px;
+    height: 140px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+ .img_esp_3{ 
+    max-width: 100%;
+    display: block;
+    width: 342px;
+    height: 193px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+    padding-bottom: 30px;
+}
 
 

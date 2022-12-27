@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data=" {menuIsOpen:false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trav-All</title>
     <link rel="stylesheet" href="src/css/page article.css">
     <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
+            
 </head>
-<body>
-    <header class="header">
-        <p>Trav-All</p>
-        <button>
-          <img src="./public/img/logo_menu.webp" alt="logo_menu">
-        </button>
-      </header>
+<body class="body">
+
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+    <ul>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
+    </ul>
+</nav>
+    </header>
 <main>
     <img src="./public/img/home 1.webp" alt="logo_accueil">
     <p> Accueil </p>
@@ -24,38 +48,42 @@
 
 <h1> Progès des voyages </h1>
 <h2> L’origine de la création : </h2>
-    <p>Pendant des siècles, les philosophes ont discuté des mérites des voyages à des fins éducatives et de croissance personnelle. 
+    <p class="texte1">Pendant des siècles, les philosophes ont discuté des mérites des voyages à des fins éducatives et de croissance personnelle. 
         Ils ont également débattu de la question de savoir si voyager faisait de vous une meilleure personne ou vous exposait simplement à de nouvelles idées.
         Alors que certaines personnes critiquent les voyages longue distance comme improductifs, il est indéniable que voir de nouveaux endroits élargit l'esprit. 
         De plus, les voyages aident les gens à apprendre une variété de langues et de coutumes, ce qui les aide à s'acclimater à de nouveaux environnements.  </p>
-    <img src="./public/img/img_espoir_1.webp" alt="image avion">
+    <img class="img_esp_1" src="./public/img/img_espoir_1.webp" alt="image avion">
 
     <br></br>
 
 <h2> Des voyages compliquées :  </h2>
-    <p>Avant l'invention de l'avion, les voyages longue distance étaient difficiles pour la classe moyenne en raison des contraintes de coût et de temps. 
+    <p class="texte2">Avant l'invention de l'avion, les voyages longue distance étaient difficiles pour la classe moyenne en raison des contraintes de coût et de temps. 
         Par exemple, les citoyens américains n'avaient que de courts voyages à l'étranger via Ellis Island au début du XXe siècle. Même alors, les voyageurs avaient peu d'options pour l'exploration à longue distance, à l'exception des voyages en mer ou de la marche à travers les frontières du pays. 
         De plus, les trains n'allaient que jusqu'aux villes avant de s'arrêter; par conséquent, ils n'ont pas pu emmener les gens aussi loin que les destinations souhaitées. </p>
-    <img src="./public/img/img_espoir_2.webp" alt="image train">
+    <img class="img_esp_2" src="./public/img/img_espoir_2.webp" alt="image train">
 
     <br></br>
 
 <h2> De nouvelles technologies : </h2>
-    <p>Aujourd'hui, les gens peuvent voyager loin et rapidement grâce à la technologie moderne. 
+    <p class="texte3">Aujourd'hui, les gens peuvent voyager loin et rapidement grâce à la technologie moderne. 
         La technologie des communications permet aux personnes de différentes parties du monde de se parler sans que les barrières géographiques ne les ralentissent. 
         De plus, les véhicules sont désormais suffisamment rapides pour franchir les frontières nationales sans s'arrêter. De plus, les avions peuvent maintenant aller plus loin que jamais à des vitesses beaucoup plus rapides. 
         Tout le monde s'est habitué à pouvoir profiter de ces luxes, mais il est facile d'oublier à quel point ces avancées signifient lorsqu'on essaie de planifier des vacances.</p>
-    <img src="./public/img/img_espoir_3.webp" alt="image avion">
+    <img class="img_esp_3" src="./public/img/img_espoir_3.webp" alt="image avion">
 
 </main>
 <footer class="footer">
-    <p>FR ANG</p>
-    <p>Mailto :</p>
-    <p><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
-    <p>Mention légale: </p>
-    <p>Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
-    <p>Enes TAVUKCU - MMI</p>
-    <img src="./public/img/picto-mmi 1.webp" alt="logo_MMi_Montbeliard">
+    <div class="frang">
+      <div class="FR"> FR </div>
+      <div class="ANG"> ANG </div>
+    </div>
+    <div class="adresse">
+    <p class="mailto">Mailto :</p>
+    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  </div>
+    <p class="mention">Mention légale : </p>
+    <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
+   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
   </footer>
 
 
