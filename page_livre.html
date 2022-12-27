@@ -1,21 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data=" {menuIsOpen:false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trav-All</title>
     <link rel="stylesheet" href="src/css/page article.css">
     <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
 </head>
-<body>
-    <header class="header">
-        <p>Trav-All</p>
-        
-          <img src="./public/img/logo_menu.webp" alt="logo_menu">
-        
-      </header>
+<header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+    <ul>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
+    </ul>
+</nav>
+    </header>
 <main>
     <img src="./public/img/home 1.webp" alt="logo_accueil">
     <p> Accueil </p>
@@ -24,37 +44,41 @@
 
 <h1> Voyage au centre de la Terre</h1>
 <h2> Un auteur pas comme les autres :  </h2>
-    <p>Voyage au centre de la Terre est un roman de science-fiction écrit par l'auteur français Jules Verne en 1864.
+    <p class="texte1">Voyage au centre de la Terre est un roman de science-fiction écrit par l'auteur français Jules Verne en 1864.
          L'histoire suit le personnage fictif de l'étudiant Otto Lidenbrock lors d'un voyage au centre de la Terre. 
          En cours de route, il apprend l'histoire naturelle et surnaturelle de notre planète. 
          Certains lecteurs ont comparé Journey to the Center of the Earth à un jeu vidéo puisqu'il transporte ses lecteurs dans un autre monde. </p>
-    <img src="./public/img/img_livre_1.webp" alt="image_livre">
+    <img class="img_livre_1" src="./public/img/img_livre_1.webp" alt="image_livre">
 
     <br></br>
 
 <h2> Un voyage International : </h2>
-    <p>Pour aider ses lecteurs à imaginer ce voyage, Verne a utilisé la géographie pour leur donner un sentiment d'appartenance. Il a basé le décor de ses personnages sur la connaissance géographique de ses lecteurs des cultures anciennes de l'Europe. 
+    <p class="texte2">Pour aider ses lecteurs à imaginer ce voyage, Verne a utilisé la géographie pour leur donner un sentiment d'appartenance. Il a basé le décor de ses personnages sur la connaissance géographique de ses lecteurs des cultures anciennes de l'Europe. 
         Par exemple, il a situé son roman en Allemagne puisque c'est là que de nombreux érudits allemands ont étudié la Grèce antique à cette époque. 
         Il a également basé la destination de ses personnages sur une caractéristique géologique connue sous le nom de vallée du Rift du Rhin. Il s'agit d'une énorme formation géologique qui traverse des parties du nord-est de la France et des parties de l'ouest de l'Allemagne, s'étendant sur plus de 100 miles de long et plus de 20 miles de large. En ancrant le voyage de ses personnages dans de telles caractéristiques géographiques reconnaissables, Verne a permis à ses lecteurs de suivre mentalement facilement les voyages de leur personnage.</p>
-    <img src="./public/img/img_livre_2.webp" alt="image_disque_album">
+    <img class="img_livre_2" src="./public/img/img_livre_2.webp" alt="image_disque_album">
 
     <br></br>
 
 <h2> Une métaphore réflective :  </h2>
-    <p>Outre son cadre et ses dialogues inventifs, le Voyage au centre de la Terre de Jules Verne se distingue par ses représentations réalistes de l'histoire naturelle et de la mythologie. 
+    <p class="texte3">Outre son cadre et ses dialogues inventifs, le Voyage au centre de la Terre de Jules Verne se distingue par ses représentations réalistes de l'histoire naturelle et de la mythologie. 
         Il encourage les membres du public à réfléchir à la géologie en plaçant ses événements dans des caractéristiques géographiques reconnaissables et des personnalités familières. 
         De plus, certaines métaphores précédemment associées à la science-fiction sont renversées par la pensée intelligente de Jules Verne, permettant aux gens de découvrir à la fois à l'intérieur et à l'extérieur du corps central de la Terre.</p>
-    <img src="./public/img/img_livre_3.webp" alt="image_dragon_ballz">
+    <img class="img_livre_3" src="./public/img/img_livre_3.webp" alt="image_dragon_ballz">
 
 </main>
 <footer class="footer">
-    <p>FR ANG</p>
-    <p>Mailto :</p>
-    <p><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
-    <p>Mention légale: </p>
-    <p>Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
-    <p>Enes TAVUKCU - MMI</p>
-    <img src="./public/img/picto-mmi 1.webp" alt="logo_MMi_Montbeliard">
+    <div class="frang">
+      <div class="FR"> FR </div>
+      <div class="ANG"> ANG </div>
+    </div>
+    <div class="adresse">
+    <p class="mailto">Mailto :</p>
+    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  </div>
+    <p class="mention">Mention légale : </p>
+    <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
+   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
   </footer>
 
 

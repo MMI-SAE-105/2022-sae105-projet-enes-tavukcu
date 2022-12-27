@@ -216,5 +216,67 @@ text-align: left;
     align-items: center;
     margin:  auto;
 }
+.img_msc_1{
+    max-width: 100%;
+    display: block;
+    width: 300px;
+    height: 181px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_msc_2{
+    max-width: 100%;
+    display: block;
+    width: 300px;
+    height: 300px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_msc_3{
+    max-width: 100%;
+    display: block;
+    width: 330px;
+    height: 250px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+    padding-bottom: 30px;
+}
+.img_livre_1{
+    max-width: 100%;
+    display: block;
+    width: 248px;
+    height: 338px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_livre_2{
+    max-width: 100%;
+    display: block;
+    width: 339px;
+    height: 240px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_livre_3{
+    max-width: 100%;
+    display: block;
+    width: 204px;
+    height: 307px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+    padding-bottom: 30px;
+}
 
 
