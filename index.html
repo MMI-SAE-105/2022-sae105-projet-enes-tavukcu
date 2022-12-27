@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data=" {menuIsOpen:false}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     
     
 </head>
-<body class="body">
+<body class="body" x-data="{ atTop: true }">
 
   <header class="header">
     <div class="header__menu">
@@ -26,8 +26,14 @@
     class="header_menuBtn"
     aria-controle="mainNav">
       <img src="./public/img/menu.svg" alt="logo_menu">
-    </button> </div>  </header>
-<nav 
+    </button> </div>  
+
+    <div class="search-form" :class="searchIsOpen && 'search-form--open'">
+      <button class="search-form__close" @pointerdown="searchIsOpen = false">
+        <img src="/public/img/picto-mmi.svg" alt="icone croix">
+      </button></div>
+
+<nav
 x-show="menuIsOpen"
 id="mainNav"
         x-transition.duration.650ms

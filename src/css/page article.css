@@ -1,11 +1,7 @@
 main{
     background-color: #FFD467;
 }
-.accueil{
-    
-    
-    
-}
+
 h1{
     text-align: center;
     font-family: 'Zilla Slab';
@@ -17,6 +13,10 @@ h2{
     font-style: italic;
     font-family: 'Zilla Slab';
     font-size: 24;
+}
+.titre{
+    text-align: center;
+    font-family: 'Zilla Slab';
 }
 
 
@@ -111,3 +111,110 @@ text-align: left;
   font-size: 17px;
   font-family: 'Zilla slab';
 }
+.img_film_1{
+    max-width: 100%;
+    display: block;
+    width: 300px;
+    height: 406px;
+    left: 39px;
+    top: 623px;
+    align-items: center;
+    margin:  auto;
+}
+.img_film_2{
+    max-width: 100%;
+    display: block;
+    width: 330px;
+    height: 166px;
+    left: 19px;
+    top: 1585px;
+    align-items: center;
+    margin:  auto;
+}
+.img_film_3{
+    max-width: 100%;
+    display: block;
+    width: 335px;
+    height: 176px;
+    left: 19px;
+    top: 1585px;
+    align-items: center;
+    margin:  auto;
+}
+.img_film_4{
+    max-width: 100%;
+    display: block;
+    width: 335px;
+    height: 139px;
+    left: 19px;
+    top: 2703px;
+    align-items: center;
+    margin:  auto;
+}
+.img_film_5{
+    max-width: 100%;
+    display: block;
+    width: 320px;
+    height: 190px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.filmo{
+    margin:  auto;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 30px;
+  gap: 10px;
+  font-size: 17px;
+  font-family: 'Zilla slab';
+}
+.img_filmo{
+    max-width: 100%;
+    display: block;
+    width: 275px;
+    height: 385px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_filmo2{
+    max-width: 100%;
+    display: block;
+    width: 275px;
+    height: 395px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_filmo3{
+    max-width: 100%;
+    display: block;
+    width: 275px;
+    height: 395px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+.img_filmo4{
+    max-width: 100%;
+    display: block;
+    width: 275px;
+    height: 375px;
+    left: 28px;
+    top: 3135px;
+    align-items: center;
+    margin:  auto;
+}
+
+

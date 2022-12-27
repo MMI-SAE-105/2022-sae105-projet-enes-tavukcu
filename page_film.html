@@ -1,21 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data=" {menuIsOpen:false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trav-All</title>
     <link rel="stylesheet" href="src/css/page article.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
 </head>
-<body>
-    <header class="header">
-        <p>Trav-All</p>
-        <button>
-          <img src="./public/img/logo_menu.webp" alt="logo_menu">
-        </button>
-      </header>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  </header>
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+    <ul>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
+    </ul>
+</nav>
+    </header>
 <main>
     <img src="./public/img/home 1.webp" alt="logo_accueil">
     <p> Accueil </p>
@@ -24,53 +45,57 @@
 
     <h1> Doctor Strange : In the Multiverse of Madness </h1>
      <h2> Marvel Studios : </h2>
-      <p>Le film ‘Doctor Strange : In the Multiverse of Madness’ est un film faisant parti de l’univers cinématographique de Marvel est un film produit par Marvel Studios sorti en 2022 , réalisé par Sam Raimi et un film d’horreur qui met en avant le personnage principal le « Docteur Strange » .</p>
-      <img src="./public/img/img_film_1 (1).webp" alt="affiche_film">
+      <p class="texte1">Le film ‘Doctor Strange : In the Multiverse of Madness’ est un film faisant parti de l’univers cinématographique de Marvel est un film produit par Marvel Studios sorti en 2022 , réalisé par Sam Raimi et un film d’horreur qui met en avant le personnage principal le « Docteur Strange » .</p>
+      <img class="img_film_1" src="/public/img/img_film_1.webp" alt="affiche_film">
 
-  <br></br>
 
-    <h2> Un début de problème :: </h2>
-     <p>Après les évènements du précédent film « Spider-Man : No Way Home » sorti en 2021 , la réalité du Multivers a été altérer et dérégler. Pour réparer ça Strange sollicite l’aide de Wanda Maximoff , qui s’est ensuite révélée être la Sorcière Rouge. 
+
+    <h2> Un début de problème : </h2>
+     <p class="texte2">Après les évènements du précédent film « Spider-Man : No Way Home » sorti en 2021 , la réalité du Multivers a été altérer et dérégler. Pour réparer ça Strange sollicite l’aide de Wanda Maximoff , qui s’est ensuite révélée être la Sorcière Rouge. 
         Elle devient rapidement son ennemie rapidement car elle veut retrouver ses enfants après avoir tout perdu, Strange détient la jeune America Chavez qui est la seule personne qui possède le pouvoir créer des portails et de voyager à travers le multivers sans problème. Docteur Strange est poussé à protéger America Chavez car Wanda veut absorbée son pouvoir et lors d’un combat apocalyptique dans un temple où est protégée America Chavez par les sorciers de l’univers 616 qui est l’univers principal des films Marvel.</p>
-     <img src="./public/img/img_film_2.webp" alt="image_wanda_doctor_strange">
+     <img class="img_film_2" src="./public/img/img_film_2.webp" alt="image_wanda_doctor_strange">
 
-  <br></br>
+
 
     <h2> Plus de détails : </h2>
-    <h3>Le début des cauchemars</h3>
-     <p>Dans ce film on commence par le 1er acte où Gargantos poursuivant America Chavez dans les rues de New-York, à la grande surprise de Strange, qui l’a vue dans son rêve. Le démon tué par Strange et par Wong , Chavez explique que Gargantos la pourchassait pour récupérer son pouvoir, et révèle au Docteur Strange que les rêves qu’il fait sont réels : ce sont des visions d’un univers parallèle.</p>
-     <img src="./public/img/img_film_3.webp" alt="image_film">
-    <h3>Un voyage multiversel</h3>
-     <p>Par la suite , pourchassé par Wanda, le sorcier et Chavez fuient à travers plusieurs réalité et voyage dans le multivers. Après avoir atterris dans l’univers 838 où une Wanda vit avec ses enfants, la Wanda de l’univers 616 prend le contrôle avec un rêve passerelle qui permet de contrôler le corps de soi-même mais d’un autre univers. Les Illuminati, composé de Mordo, Captain Carter, Black Bolt, Dr Reed Richards et du professeur Charles Xavier vont tenter d’arrêter Wanda ainsi vont être battu.</p>
-     <img src="./public/img/img_film_4.webp" alt="image_film2">
-    <h3>Un combat déterminant</h3>
-     <p>Plus tard, Wanda attrape America Chavez et va lui faire voyager dans l’univers où Wanda peut trouver ses enfants. Finalement, la Sorcière Rouge renonce à récupérer le pouvoir et décide de laisser la jeune America Chavez, ainsi Wanda décide de se suicider en détruisant une montagne et d’y rester sous les décombres. </p>
-     <img src="./public/img/img_film_5.webp" alt="image_film3">
+    <h3 class="titre">Le début des cauchemars</h3>
+     <p class="texte3">Dans ce film on commence par le 1er acte où Gargantos poursuivant America Chavez dans les rues de New-York, à la grande surprise de Strange, qui l’a vue dans son rêve. Le démon tué par Strange et par Wong , Chavez explique que Gargantos la pourchassait pour récupérer son pouvoir, et révèle au Docteur Strange que les rêves qu’il fait sont réels : ce sont des visions d’un univers parallèle.</p>
+     <img class="img_film_3" src="./public/img/img_film_3.webp" alt="image_film">
+    <h3 class="titre">Un voyage multiversel</h3>
+     <p class="texte3">Par la suite , pourchassé par Wanda, le sorcier et Chavez fuient à travers plusieurs réalité et voyage dans le multivers. Après avoir atterris dans l’univers 838 où une Wanda vit avec ses enfants, la Wanda de l’univers 616 prend le contrôle avec un rêve passerelle qui permet de contrôler le corps de soi-même mais d’un autre univers. Les Illuminati, composé de Mordo, Captain Carter, Black Bolt, Dr Reed Richards et du professeur Charles Xavier vont tenter d’arrêter Wanda ainsi vont être battu.</p>
+     <img class="img_film_4" src="./public/img/img_film_4.webp" alt="image_film2">
+    <h3 class="titre">Un combat déterminant</h3>
+     <p class="texte3">Plus tard, Wanda attrape America Chavez et va lui faire voyager dans l’univers où Wanda peut trouver ses enfants. Finalement, la Sorcière Rouge renonce à récupérer le pouvoir et décide de laisser la jeune America Chavez, ainsi Wanda décide de se suicider en détruisant une montagne et d’y rester sous les décombres. </p>
+     <img class="img_film_5" src="./public/img/img_film_5.webp" alt="image_film3">
     
     <h2>Filmographie</h2>
-     <p>Sam Raimi a produit et réalisé plusieurs films , notamment 
+     <p class="filmo">Sam Raimi a produit et réalisé plusieurs films , notamment 
         la trilogie Spider-Man des années 2000, mais il est notamment très connu pour ses films d’horreur
         Evil Dead. </p>
     
-    <h3>Spider-Man (2002)</h3>
-     <img src="./public/img/spiderman1.webp" alt="image_spiderman1">
-    <h3>Spider-Man 2 (2004)</h3>
-     <img src="./public/img/spiderman2.webp" alt="image_spiderman2">
-    <h3>Spider-Man 3 (2007)</h3>
-     <img src="./public/img/spiderman3.webp" alt="image_spiderman3">
-    <h3>The Evil Dead (1981)</h3>
-     <img src="./public/img/evil dead.webp" alt="image_evid_dead">
+    <h3 class="titre">Spider-Man (2002)</h3>
+     <img class="img_filmo" src="./public/img/spiderman1.webp" alt="image_spiderman1">
+    <h3 class="titre">Spider-Man 2 (2004)</h3>
+     <img class="img_filmo2" src="./public/img/spiderman2.webp" alt="image_spiderman2">
+    <h3 class="titre">Spider-Man 3 (2007)</h3>
+     <img class="img_filmo3" src="./public/img/spiderman3.webp" alt="image_spiderman3">
+    <h3 class="titre">The Evil Dead (1981)</h3>
+     <img class="img_filmo4" src="/public/img/evil_dead.webp" alt="image_evid_dead">
 
 </main>
 <footer class="footer">
-    <p>FR ANG</p>
-    <p>Mailto :</p>
-    <p><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
-    <p>Mention légale: </p>
-    <p>Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
-    <p>Enes TAVUKCU - MMI</p>
-    <img src="./public/img/picto-mmi 1.webp" alt="logo_MMi_Montbeliard">
-  </footer>
+  <div class="frang">
+    <div class="FR"> FR </div>
+    <div class="ANG"> ANG </div>
+  </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
+  <p class="mention">Mention légale : </p>
+  <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
+</footer>
 
     
 </body>
