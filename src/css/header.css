@@ -6,6 +6,7 @@
     width: 100%;
     align-items: center;
     height: 100px;
+    
 }
 .search-form {
   visibility: hidden;
@@ -13,7 +14,7 @@
   position: absolute;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  z-index: 100;
+  
   background-color: var(--gray-white);
   transform: translateY(-80px);
   transition: all .4s ease-in-out;
@@ -39,7 +40,7 @@
   }
 .header_menuBtn {
     position: relative;
-    z-index: 10;
+    
     align-content: flex-end;
     appearance: none;
     outline: none;
