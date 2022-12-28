@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr" x-data=" {menuIsOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trav-All</title>
+    <link rel="stylesheet" href="src/css/page article.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
+            
+</head>
+<body class="body">
+
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+    <ul>
+        <li><a href="/page_lieu.html"> Lieu </a></li>
+        <li><a href="/page_musique.html"> Musique </a></li>
+        <li><a href="/page_film.html"> Film </a></li>
+        <li><a href="/page_livre.html"> Livre </a></li>
+        <li><a href="/page_regret.html"> Regret </a></li>
+        <li><a href="/page_espoir.html"> Espoir </a></li>
+    </ul>
+</nav>
+    </header>
+<main>
+  
+  <div class="accueil"><a href="/index.html">
+    <button class="home">
+      <img src="./public/img/back_home.svg" alt="logo_menu">
+    </button>
+    
+  </a></div>
+  
+    
+
+     <h1> Iles Galapagos </h1>
+     <article>
+     <h2> Bienvenu aux Iles Galapagos : </h2>
+     <p class="texte1">Les Iles Galapagos sont situées dans une province de l’Equateur et au Nord-Est de l’océan pacifique. Les Iles ont été découvertes le 10 mars 1535 par les européens plus spécialement par les espagnols. Avec une population de 30 890 d’habitants et une superficie de 8 010km² , les iles Galapagos ont pour capitale Puerto Baquerizo Moreno.</p>
+     <img class="img_lieu_1" src="./public/img/img_lieu_1.webp" alt="image_iles_galapagos">
+    </article>
+
+
+  <article>
+     <h2> Un air volcanique : </h2>
+     <p class="texte2">Des volcans sur plusieurs îles différentes comme La Cumbre (1 476 m), Wolf ( 1 707 m), Cerro Azul ( 1 640m)…
+     <br></br>
+     Plusieurs cantons : <br>
+         - Isabela avec 1 790 personnes qui habitent dans ce canton et une superficie de 5 368 km².<br>
+         -  San Cristobal avec une population de 6 142 habitants et une superficie de 849km².<br>
+               - Santa cruz avec une population de 11 264 pour une superficie de 1 794 km².</div>
+     </p>
+     <img class="img_lieu_2" src="./public/img/img_lieu_2.webp" alt="image_volcans">
+    </article>
+
+    
+<article>
+     <h2> La faune et la flore : </h2>
+     <p class="texte3">Il accueille le parc national des Galapagos qui constituent un site du patrimoine mondial de l’UNESCO. Ainsi , dans ce parc qui abrite une faune spécifique et des variétés de reptiles uniques comme des iguanes terrestres , iguane marin , des tortues géantes , des crabes Grapsus grapsus appelés aussi « crabes rouges » , des otaries , des requins marteaux et des poissons.
+     </p>
+     <img class="img_lieu_3" src="./public/img/img_lieu_3.webp" alt="image_iguanes_terrestres">
+    </article>
+    
+<article>
+     <h2> Un peu de culture : </h2>
+     <p class="texte4">Le nom Galapagos a été donné à l’astéroïde 16809. Encore plus anciens, dans le dessin animé des Mystérieuses Cités d’or , les Iles Galapagos sont représentées.
+       <br></br>
+        Dans un roman, Contes de la Véranda dont l’auteur Herman Melville notamment du livre Moby Dick , fait une grosse référence aux iles suite à une visite de l’archipel.
+        <br></br>
+        Le film Master and Commander sorti en 2003 , inclue une scène dont les Iles Galapagos sont filmés avec une visite.
+        </p>
+      </article>
+    
+
+</main>
+<footer class="footer">
+  <div class="frang">
+    <div class="FR"> FR </div>
+    <div class="ANG"> ANG </div>
+  </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
+  <p class="mention">Mention légale : </p>
+  <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
+</footer>
+
+</body>
+</html>
