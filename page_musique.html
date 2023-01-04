@@ -1,51 +1,72 @@
-!DOCTYPE html>
-<html lang="fr" x-data=" {menuIsOpen:false}">
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trav-All</title>
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
     <link rel="stylesheet" href="src/css/page article.css">
     <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="/src/css/footer.css">
-    <link rel="stylesheet" href="/src/css/main.css">
-
+    <link rel="stylesheet" href="src/css/footer.css">
+    
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
     <style></style>
+    
+    
+    
 </head>
 <body class="body">
-
-    <header class="header">
-      <div class="header__menu">
-        <img class="header__logo" src="/public/img/logo projet 2.svg">
-      <p class="Nomsite">Trav-All</p>
-      <button @click="menuIsOpen = !menuIsOpen"
-      class="header_menuBtn"
-      aria-controle="mainNav">
-        <img src="./public/img/menu.svg" alt="logo_menu">
-      </button> </div>  
-  <nav 
-  x-show="menuIsOpen"
-  id="mainNav"
-          x-transition.duration.650ms
-          class="menu">
-      <ul>
-          <li><a href="/page_lieu.html"> Lieu </a></li>
-          <li><a href="/page_musique.html"> Musique </a></li>
-          <li><a href="/page_film.html"> Film </a></li>
-          <li><a href="/page_livre.html"> Livre </a></li>
-          <li><a href="/page_regret.html"> Regret </a></li>
-          <li><a href="/page_espoir.html"> Espoir </a></li>
-      </ul>
-  </nav>
-      </header>
-<main>
-    <div class="accueil"><a href="/index.html">
-        <button class="home">
-          <img src="./public/img/back_home.svg" alt="logo_menu">
-        </button>
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/page_musique.html"> PNL - 91's </a></li>
         
-      </a></div>
+        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
+        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
+        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste"><a href="/en/book_page.html"> Glossaire </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> Autres projets </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> A propos </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> Contact </a> </li>
+  
+</div>
+<div class="fren_menu">
+  <div class="FR"> FR </div>
+  <div class="ANG"> EN </div>
+</div>
+
+</nav>
+    </header>
+<main>
+  <a href="/index.html">
+    <article class="accueil">
+      
+      <img src="/public/img/back_home.svg" alt="logo_menu">
+    
+  </article>
+  </a>
 
 <h1> Uranus - PNL </h1>
 <h2> Deux frères : </h2>

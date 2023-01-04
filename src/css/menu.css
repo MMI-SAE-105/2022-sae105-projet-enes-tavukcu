@@ -1,0 +1,55 @@
+.menu {
+  position: fixed;
+ 
+  width: 100vw;
+  height: 217vw;
+  background: #FF005E;
+  
+  place-content: center;
+  font-size: 18px;
+}
+.liste{
+  font-family: 'Zilla Slab';
+  font-size: 25px;
+}
+.liste_f{
+  font-family: 'Zilla Slab';
+  font-size: 25px;
+  line-height: 1;
+}
+.article{
+  font-family: 'Zilla Slab';
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  
+}
+.article_menu{
+  padding-left: 20px;
+}
+li::marker {
+  color:#FF005E;
+}
+.ligne_menu{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.autre{
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: bold;
+}
+.fren_menu{
+  padding-left: 14px;
+ font-size: larger;
+  margin-top: 0px;
+ justify-content: space-evenly;
+  display: flex;
+  padding-top: 40px;
+  font-family: 'Zilla Slab';
+  color: #f0f0f0;
+}
+.nom_article{
+  line-height: 1.7;
+}

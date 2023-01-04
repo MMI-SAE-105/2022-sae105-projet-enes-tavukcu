@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
     <title>Trav-All</title> 
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/media.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
     <style></style>
     
     
     
 </head>
-<body class="body" x-data="{ atTop: true }">
-
+<body class="body">
   <header class="header">
     <div class="header__menu">
       <img class="header__logo" src="/public/img/logo projet 2.svg">
@@ -27,25 +28,35 @@
     aria-controle="mainNav">
       <img src="./public/img/menu.svg" alt="logo_menu">
     </button> </div>  
-
-    <div class="search-form" :class="searchIsOpen && 'search-form--open'">
-      <button class="search-form__close" @pointerdown="searchIsOpen = false">
-        <img src="/public/img/picto-mmi.svg" alt="icone croix">
-      </button></div>
-
-<nav
+<nav 
 x-show="menuIsOpen"
 id="mainNav"
         x-transition.duration.650ms
         class="menu">
-    <ul>
-        <li><a href="/page_lieu.html"> Lieu </a></li>
-        <li><a href="/page_musique.html"> Musique </a></li>
-        <li><a href="/page_film.html"> Film </a></li>
-        <li><a href="/page_livre.html"> Livre </a></li>
-        <li><a href="/page_regret.html"> Regret </a></li>
-        <li><a href="/page_espoir.html"> Espoir </a></li>
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/page_musique.html"> PNL - 91's </a></li>
+        
+        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
+        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
+        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
     </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste"><a href="/en/book_page.html"> Glossaire </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> Autres projets </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> A propos </a> </li>
+  <li class="liste"><a href="/en/book_page.html"> Contact </a> </li>
+  
+</div>
+<div class="fren_menu">
+  <div class="FR"> FR </div>
+  <div class="ANG"> EN </div>
+</div>
+
 </nav>
     </header>
 
@@ -56,15 +67,7 @@ id="mainNav"
 
 
     <main class="main">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      
   
       <p class="introduction"> 
      Bonjour et bienvenue sur mon site qui vous présentera plusieurs secteurs du monde du voyage. 
@@ -134,7 +137,7 @@ id="mainNav"
 <footer class="footer">
   <div class="frang">
     <div class="FR"> FR </div>
-    <div class="ANG"> ANG </div>
+    <div class="ANG"> EN </div>
   </div>
   <div class="adresse">
   <p class="mailto">Mailto :</p>
