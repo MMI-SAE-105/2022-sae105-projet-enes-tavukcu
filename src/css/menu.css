@@ -34,6 +34,7 @@ li::marker {
 .ligne_menu{
   margin-left: 75px;
   margin-right: 75px;
+  border-top: 2px solid #FFFFFF
 }
 .autre{
   padding-top: 20px;
@@ -51,5 +52,5 @@ li::marker {
   color: #f0f0f0;
 }
 .nom_article{
-  line-height: 1.7;
+  line-height: 2.5;
 }
