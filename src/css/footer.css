@@ -38,10 +38,13 @@ footer a {
     display: flex;
     gap: var(--space3x);
     align-items: center;
-    margin-left: 220px;
+    margin-left: 180px;
     padding-bottom: 5px;
 }
 .nom{
     font-size: smaller;
+}
+.logommi{
+    height: 70px;
 }
 
