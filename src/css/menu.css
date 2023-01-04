@@ -23,6 +23,7 @@
   font-size: 30px;
   margin-top: 12px;
   margin-bottom: 10px;
+  margin-left: 15px;
   
 }
 .article_menu{
@@ -37,7 +38,6 @@ li::marker {
   border-top: 2px solid #FFFFFF
 }
 .autre{
-  padding-top: 20px;
   line-height: 2;
   font-weight: bold;
 }
@@ -47,7 +47,7 @@ li::marker {
   margin-top: 0px;
  justify-content: space-evenly;
   display: flex;
-  padding-top: 40px;
+  padding-top: 5px;
   font-family: 'Zilla Slab';
   color: #f0f0f0;
 }
