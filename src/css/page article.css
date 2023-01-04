@@ -25,16 +25,15 @@ h2{
     appearance: none;
     outline: none;
     border:none;
-    background: none;
-    
-    
-   
+    background: none; 
   }
 .accueil{
     padding-top: 20px;
     padding-left:  10px;
 }
-
+.lienDef{
+    color: #2178A9;
+}
 .texte1{
     margin:  auto;
   display: block;
@@ -42,7 +41,7 @@ margin-left: auto;
 margin-right: auto;
 text-align: left;
   
-  display: flex;
+  
   flex-direction: row;
   align-items: flex-start;
   padding: 20px 30px;
@@ -67,7 +66,7 @@ margin-left: auto;
 margin-right: auto;
 text-align: left;
   
-  display: flex;
+  
   flex-direction: row;
   align-items: flex-start;
   padding: 20px 30px;
@@ -92,7 +91,7 @@ margin-left: auto;
 margin-right: auto;
 text-align: left;
   
-  display: flex;
+  
   flex-direction: row;
   align-items: flex-start;
   padding: 20px 30px;

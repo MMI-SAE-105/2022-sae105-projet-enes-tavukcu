@@ -1,9 +1,33 @@
 main{
     background-color: #FFD467;
+    padding-bottom: 1px;
 }
-h2{
+h1{
     text-align: center;
+    font-family: 'Zilla Slab';
+    padding-bottom: 10px;
+    
 }
-p{
-    text-align: center;
+.def{
+    line-height: 15px;
+    padding-bottom: inherit;
+}
+.nomDef{
+    font-family: 'Zilla Slab';
+    text-decoration: underline;
+    padding-left: 30px;
+    font-weight: bold;
+}
+.texteDef{
+    font-family: 'Zilla Slab';
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.accueil{
+    padding-top: 20px;
+    padding-left:  10px;
+}
+.defA{
+    line-height: 15px;
+    padding-bottom: 15px;
 }

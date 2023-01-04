@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/autrespages.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style></style>
+    
+    
+    
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/page_musique.html"> PNL - 91's </a></li>
+        
+        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
+        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
+        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+    <li class="liste_autre"><a href="/Glossaire.html"> Glossaire </a> </li>
+    <li class="liste_autre"><a href="/en/book_page.html"> Autres projets </a> </li>
+    <li class="liste_autre"><a href="/en/book_page.html"> A propos </a> </li>
+    <li class="liste_autre"><a href="/en/book_page.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <div class="FR"> FR </div>
+  <div class="ANG"> EN </div>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/index.html">
+        <article class="accueil">
+          
+          <img src="/public/img/back_home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+
+<h1> Glossaire </h1>
+
+<div class="def">
+    <p class="nomDef">Acclimater : </p> 
+    <p class="texteDef">L'acclimatation désigne l'adaptation physiologique d'un organisme vivant transposé dans une région géographique différente de son aire d'origine.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Canton : </p> 
+    <p class="texteDef">Un canton est un type de territoire de niveau inférieur à un État.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Cloud rap : </p> 
+    <p class="texteDef">Egalement appelé trillwave, est un sous-genre du rap, caractérisé notamment une structure musicale plus lente et plus aérienne que le rap traditionnel.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Disque de certification : </p> 
+    <p class="texteDef">Un disque de certification est une récompense remise à un artiste pour souligner qu’un album ou un single s'est vendu à un certain nombre d'exemplaires.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Erudit : </p> 
+    <p class="texteDef">Synonyme de savant.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Iguane Terrestre : </p> 
+    <p class="texteDef">Un reptilien unique en son genre car on en trouve uniquement dans les Iles Galapagos.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Improductif : </p> 
+    <p class="texteDef">Qui ne produit, ne rapporte rien.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Label : </p> 
+    <p class="texteDef">Maison de production de disques.</p>
+</div>
+
+<div class="def">
+    <p class="nomDef">Mort prématurée : </p> 
+    <p class="texteDef">Le taux de mortalité prématurée est un indicateur qui rend compte de l’état de santé d’une population.</p>
+</div>
+
+<div class="defA">
+    <p class="nomDef">Science-fiction : </p> 
+    <p class="texteDef">Genre littéraire et artistique qui décrit un état futur du monde en extrapolant les données de la science ou de la technologie.</p>
+</div>
+
+
+
+
+
+
+</main>
+<footer class="footer">
+  <div class="frang">
+    <div class="FR"> FR </div>
+    <div class="ANG"> EN </div>
+  </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
+  <p class="mention">Mention légale : </p>
+  <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></div>
+</footer>
+
+    
+</body>
+</html>
