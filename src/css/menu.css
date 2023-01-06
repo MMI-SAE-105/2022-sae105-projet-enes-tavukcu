@@ -49,9 +49,9 @@ li::marker {
 }
 .fren_menu{
   padding-left: 14px;
- font-size: larger;
+  font-size: larger;
   margin-top: 0px;
- justify-content: space-evenly;
+  justify-content: space-evenly;
   display: flex;
   padding-top: 5px;
   font-family: 'Zilla Slab';

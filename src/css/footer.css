@@ -9,11 +9,15 @@ footer a {
     color: #FFFFFF;
     text-decoration: underline;
 }
+.lienFREN{ 
+   text-decoration: none; 
+   
+}
 .frang{
     padding-left: 14px;
-   font-size: larger;
+    font-size: larger;
     margin-top: 0px;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     display: flex;
     padding-top: 10px;
     
