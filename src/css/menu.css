@@ -10,7 +10,7 @@
 }
 .liste{
   font-family: 'Zilla Slab';
-  font-size: 14px;
+  font-size: 16px;
 }
 .liste_f{
   font-family: 'Zilla Slab';
@@ -31,7 +31,7 @@
   
 }
 .article_menu{
-  padding-left: 20px;
+  padding-left: 15px;
 }
 li::marker {
   color:#FF005E;
