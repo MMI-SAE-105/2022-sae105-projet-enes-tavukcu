@@ -10,21 +10,21 @@
 }
 .liste{
   font-family: 'Zilla Slab';
-  font-size: 18px;
+  font-size: 14px;
 }
 .liste_f{
   font-family: 'Zilla Slab';
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
 }
 .liste_autre{
   font-family: 'Zilla Slab';
-  font-size: 24px;
+  font-size: 18px;
 }
 .article{
   font-family: 'Zilla Slab';
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 15px;
