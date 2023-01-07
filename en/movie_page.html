@@ -1,104 +1,134 @@
 <!DOCTYPE html>
-<html lang="fr" x-data=" {menuIsOpen:false}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trav-All</title>
-    <link rel="stylesheet" href="src/css/page article.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/page article.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <style></style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
 </head>
 <body class="body">
   <header class="header">
     <div class="header__menu">
-      <img class="header__logo" src="/public/img/logo projet 2.svg">
-    <p class="Nomsite">Trav-All</p>
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
     <button @click="menuIsOpen = !menuIsOpen"
     class="header_menuBtn"
     aria-controle="mainNav">
-      <img src="./public/img/menu.svg" alt="logo_menu">
+      <img src="/public/img/menu.svg" alt="logo_menu">
     </button> </div>  
 <nav 
 x-show="menuIsOpen"
 id="mainNav"
         x-transition.duration.650ms
         class="menu">
-    <ul>
-        <li><a href="/page_lieu.html"> Place </a></li>
-        <li><a href="/page_musique.html"> Music </a></li>
-        <li><a href="/page_film.html"> Movie </a></li>
-        <li><a href="/page_livre.html"> Book </a></li>
-        <li><a href="/page_regret.html"> Regret </a></li>
-        <li><a href="/page_espoir.html"> Hope </a></li>
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - Uranus </a></li>
+        
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
     </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_film.html"><div class="FR"> FR </div></a>
+  <a href="/en/movie_page.html"><div class="ANG"> EN </div></a>
+</div>
+
 </nav>
     </header>
+
 <main>
-  <div class="accueil"><a href="/index.html">
-    <button class="home">
-      <img src="./public/img/back_home.svg" alt="logo_menu">
-    </button>
-    
-  </a></div>
+    <a href="/en/home_page.html">
+        <article class="accueil">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+
 
     <h1> Doctor Strange : In the Multiverse of Madness </h1>
      <h2> Marvel Studios : </h2>
-      <p class="texte1">The film ‘Doctor Strange: In the Multiverse of Madness’ is a film from Marvel’s cinematic universe, produced by Marvel Studios and released in 2022, directed by Sam Raimi, and a horror film that highlights the main character of the film. 
+      <p class="texte1">The film ‘Doctor Strange: In the Multiverse of Madness’ is a film from <a class="lienExt" href="https://fr.wikipedia.org/wiki/Univers_cin%C3%A9matographique_Marvel">Marvel's cinematic universe</a>, produced by Marvel Studios and released in 2022, directed by Sam Raimi, and a horror film that highlights the main character of the film. 
         “Doctor Strange”.</p>
       <img class="img_film_1" src="/public/img/img_film_1.webp" alt="affiche_film">
 
 
 
-    <h2> Un début de problème : </h2>
+    <h2> A beginning of trouble : </h2>
      <p class="texte2">After the events of the previous movie «Spider-Man: No Way Home» released in 2021, the reality of the Multivers has been altered and deregulated. To fix this, Strange seeks the help of Wanda Maximoff, who later turned out to be the Red Witch. 
         She quickly becomes her enemy quickly because she wants to find her children after having lost everything, Strange holds the young America Chavez who is the only person who has the power to create portals and travel through the multiverse without problem. Strange is pushed to protect America Chavez because Wanda wants to absorb his power and during an apocalyptic fight in a temple where is protected America Chavez by the sorcerers of universe 616 which is the main universe of Marvel films.</p>
-     <img class="img_film_2" src="./public/img/img_film_2.webp" alt="image_wanda_doctor_strange">
+     <img class="img_film_2" src="/public/img/img_film_2.webp" alt="image_wanda_doctor_strange">
 
 
 
     <h2> Some details : </h2>
     <h3 class="titre">The beginning from nightmare</h3>
      <p class="texte3">In this film we start with the first act where Gargantos pursues America Chavez in the streets of New York, to the great surprise of Strange, who saw her in her dream. The demon killed by Strange and Wong , Chavez explains that Gargantos was chasing her to regain her power, and reveals to Doctor Strange that the dreams he has are real: they are visions of a parallel universe.</p>
-     <img class="img_film_3" src="./public/img/img_film_3.webp" alt="image_film">
+     <img class="img_film_3" src="/public/img/img_film_3.webp" alt="image_film">
     <h3 class="titre">Multiversal travel</h3>
      <p class="texte3">Then , chased by Wanda, the sorcerer and Chavez flee through several reality and travel in the multiverse. After landing in universe 838 where a Wanda lives with her children, the Wanda of universe 616 takes control with a bridge dream that allows to control the body of oneself but of another universe. The Illuminati, composed of Mordo, Captain Carter, Black Bolt, Dr.Reed Richards and Professor Charles Xavier will try to stop Wanda so will be beaten.</p>
-     <img class="img_film_4" src="./public/img/img_film_4.webp" alt="image_film2">
+     <img class="img_film_4" src="/public/img/img_film_4.webp" alt="image_film2">
     <h3 class="titre">A decisive battle :</h3>
      <p class="texte3">Later, Wanda catches America Chavez and takes him on a journey into the universe where Wanda can find his children. Finally, the Red Witch renounces to regain power and decides to leave the young America Chavez, so Wanda decides to kill herself by destroying a mountain and to stay there under the rubble. </p>
-     <img class="img_film_5" src="./public/img/img_film_5.webp" alt="image_film3">
+     <img class="img_film_5" src="/public/img/img_film_5.webp" alt="image_film3">
     
     <h2>Filmography</h2>
      <p class="filmo">Sam Raimi has produced and directed several films, including the Spider-Man trilogy of the 2000s, but he is particularly well known for his horror films
         Evil Dead </p>
     
     <h3 class="titre">Spider-Man (2002)</h3>
-     <img class="img_filmo" src="./public/img/spiderman1.webp" alt="image_spiderman1">
+     <img class="img_filmo" src="/public/img/spiderman1.webp" alt="image_spiderman1">
     <h3 class="titre">Spider-Man 2 (2004)</h3>
-     <img class="img_filmo2" src="./public/img/spiderman2.webp" alt="image_spiderman2">
+     <img class="img_filmo2" src="/public/img/spiderman2.webp" alt="image_spiderman2">
     <h3 class="titre">Spider-Man 3 (2007)</h3>
-     <img class="img_filmo3" src="./public/img/spiderman3.webp" alt="image_spiderman3">
+     <img class="img_filmo3" src="/public/img/spiderman3.webp" alt="image_spiderman3">
     <h3 class="titre">The Evil Dead (1981)</h3>
      <img class="img_filmo4" src="/public/img/evil_dead.webp" alt="image_evid_dead">
 
 </main>
 <footer class="footer">
   <div class="frang">
-    <div class="FR"> FR </div>
-    <div class="ANG"> ANG </div>
+    <a class="lienFREN" href="/page_film.html"><div class="FR"> FR </div></a>
+  <a class="lienFREN" href="/en/movie_page.html"><div class="ANG"> EN </div></a>
   </div>
   <div class="adresse">
   <p class="mailto">Mailto :</p>
   <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
 </div>
-<p class="mention">Disclaimer : </p>
-<p class="legal">Project carried out as part of an educational exercise in the<a href="MMi de Montbéliard"> MMi de Montbéliard</a></p>
- <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
+  <p class="mention">Disclaimer : </p>
+  <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
 </footer>
-
     
+
 </body>
+
 </html>

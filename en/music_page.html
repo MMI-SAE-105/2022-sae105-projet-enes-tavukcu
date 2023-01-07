@@ -1,89 +1,111 @@
-!DOCTYPE html>
-<html lang="fr" x-data=" {menuIsOpen:false}">
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trav-All</title>
-    <link rel="stylesheet" href="src/css/page article.css">
-    <link rel="stylesheet" href="src/css/header.css">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/page article.css">
+    <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/footer.css">
+    
     <link rel="stylesheet" href="/src/css/main.css">
-
+    <link rel="stylesheet" href="/src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <style></style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
 </head>
 <body class="body">
-
-    <header class="header">
-      <div class="header__menu">
-        <img class="header__logo" src="/public/img/logo projet 2.svg">
-      <p class="Nomsite">Trav-All</p>
-      <button @click="menuIsOpen = !menuIsOpen"
-      class="header_menuBtn"
-      aria-controle="mainNav">
-        <img src="./public/img/menu.svg" alt="logo_menu">
-      </button> </div>  
-  <nav 
-  x-show="menuIsOpen"
-  id="mainNav"
-          x-transition.duration.650ms
-          class="menu">
-      <ul>
-          <li><a href="/page_lieu.html"> Lieu </a></li>
-          <li><a href="/page_musique.html"> Musique </a></li>
-          <li><a href="/page_film.html"> Film </a></li>
-          <li><a href="/page_livre.html"> Livre </a></li>
-          <li><a href="/page_regret.html"> Regret </a></li>
-          <li><a href="/page_espoir.html"> Espoir </a></li>
-      </ul>
-  </nav>
-      </header>
-<main>
-    <div class="accueil"><a href="/index.html">
-        <button class="home">
-          <img src="./public/img/back_home.svg" alt="logo_menu">
-        </button>
+  <header class="header">
+    <div class="header__menu">
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="/public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - Uranus </a></li>
         
-      </a></div>
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_musique.html"><div class="FR"> FR </div></a>
+  <a href="/en/music_page.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/en/home_page.html">
+        <article class="accueil">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
 
 <h1> Uranus - PNL </h1>
-<h2> Deux frères : </h2>
-    <p class="texte1">La musique ‘Uranus’ de PNL est une musique faisant parti de l’album        
-        « Dans la légende » sorti en 2016. PNL, étant un groupe de musique composé de deux rappeurs français , Ademo et N.O.S , deux frères. Ils ont composé, écrit , produit , plusieurs de leurs sons et on ainsi crée plusieurs labels notamment PNL records, QLF records en 2014 et 2015. </p>
-    <img class="img_msc_1" src="./public/img/img_musique_1.webp" alt="image_pnl">
+<h2> Two brothers : </h2>
+    <p class="texte1">PNL’s ‘Uranus’ music is part of the 2016 ‘In the Legend’ album. PNL, being a music group composed of two French rappers , Ademo and N.O.S , two brothers. They composed, wrote , produced , several of their sounds and we created several labels including PNL records, QLF records in 2014 and 2015.  </p>
+    <img class="img_msc_1" src="/public/img/img_musique_1.webp" alt="image_pnl">
 
-    <br></br>
+    
 
-<h2> Quelques chiffres et données : </h2>
-    <p class="texte2">En 2016 ils sortent leur album Dans la légende qui est considéré comme du        
-        « cloud rap » , qui fait un succès monumental. Plusieurs sons comme Naha, Béné, Dans la légende, Onizuka deviennent des sons très rapidement cultes et encré dans l’histoire du rap français. L’album est vendu à plus d’1 million d’exemplaires. L’album a reçu des accueils critiques positifs, reçoit également le disque d’or avec 51 487 exemplaires vendus en 1 semaine et bien plus tard en décembre reçoit le triple disque de platine l’équivalent de 300.000 ventes.</p>
-    <img class="img_msc_2" src="./public/img/img_musique_2.webp" alt="image_disque_album">
+<h2> Some figures and data : </h2>
+    <p class="texte2">In 2016 they released their album Dans la légende, which is considered to be “cloud rap”, a monumental success. Several sounds like Naha , Béné, In legend, Onizuka become very quickly cult and inked sounds in the history of French rap. The album sold more than 1 million copies. The album received positive reviews, also received the gold record with 51,487 copies sold in 1 week and much later in December received the triple platinum record the equivalent of 300,000 sales.</p>
+    <img class="img_msc_2" src="/public/img/img_musique_2.webp" alt="image_disque_album">
 
-    <br></br>
+    
 
-<h2> Contenus musicals : </h2>
-    <p class="texte3">PNL utilise des sonorités musicales très mélodieuses qui peux faire réfléchir l’auditeur et le faire voyager en mélangeant avec des sonorités « douces » et « spatiales » qui font voyager l’esprit et permet de faire le vide. Dans leurs textes ils font beaucoup de références, de plusieurs mangas notamment GTO , Dragon Ball et Naruto. Cela nous permet de se situer dans un contexte et d’être pensif, de voyager leurs musiques entre le monde animé des mangas et le monde réel.</p>
-    <img class="img_msc_3" src="./public/img/img_musique_3.webp" alt="image_dragon_ballz">
+<h2> Musical content : </h2>
+    <p class="texte3">PNL uses very melodious musical sounds that can make the listener think and travel by mixing with «soft» and «spatial» sounds that make the mind travel and make the void. In their texts they do a lot of references, several mangas including GTO, Dragon Ball and Naruto. This allows us to situate ourselves in a context and be thoughtful, to travel their music between the animated world of mangas and the real world.</p>
+    <img class="img_msc_3" src="/public/img/img_musique_3.webp" alt="image_dragon_ballz">
 
 </main>
 <footer class="footer">
-    <div class="frang">
-      <div class="FR"> FR </div>
-      <div class="ANG"> ANG </div>
-    </div>
-    <div class="adresse">
-    <p class="mailto">Mailto :</p>
-    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  <div class="frang">
+    <a class="lienFREN" href="/page_musique.html"><div class="FR"> FR </div></a>
+  <a class="lienFREN" href="/en/music_page.html"><div class="ANG"> EN </div></a>
   </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
   <p class="mention">Disclaimer : </p>
-  <p class="legal">Project carried out as part of an educational exercise in the<a href="MMi de Montbéliard"> MMi de Montbéliard</a></p>
-   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
-  </footer>
-
-
-
-
+  <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+</footer>
     
+
 </body>
+
 </html>

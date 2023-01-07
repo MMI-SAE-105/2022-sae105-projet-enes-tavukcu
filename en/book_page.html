@@ -1,94 +1,118 @@
 <!DOCTYPE html>
-<html lang="fr" x-data=" {menuIsOpen:false}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trav-All</title>
-    <link rel="stylesheet" href="src/css/page article.css">
-    <link rel="stylesheet" href="src/css/header.css">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/page article.css">
+    <link rel="stylesheet" href="/src/css/header.css">
     <link rel="stylesheet" href="/src/css/footer.css">
+    
     <link rel="stylesheet" href="/src/css/main.css">
-
+    <link rel="stylesheet" href="/src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <style></style>
-
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
 </head>
 <body class="body">
-
-<header class="header">
+  <header class="header">
     <div class="header__menu">
-      <img class="header__logo" src="/public/img/logo projet 2.svg">
-    <p class="Nomsite">Trav-All</p>
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
     <button @click="menuIsOpen = !menuIsOpen"
     class="header_menuBtn"
     aria-controle="mainNav">
-      <img src="./public/img/menu.svg" alt="logo_menu">
+      <img src="/public/img/menu.svg" alt="logo_menu">
     </button> </div>  
 <nav 
 x-show="menuIsOpen"
 id="mainNav"
         x-transition.duration.650ms
         class="menu">
-    <ul>
-        <li><a href="/page_lieu.html"> Lieu </a></li>
-        <li><a href="/page_musique.html"> Musique </a></li>
-        <li><a href="/page_film.html"> Film </a></li>
-        <li><a href="/page_livre.html"> Livre </a></li>
-        <li><a href="/page_regret.html"> Regret </a></li>
-        <li><a href="/page_espoir.html"> Espoir </a></li>
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - Uranus </a></li>
+        
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
     </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_livre.html"><div class="FR"> FR </div></a>
+  <a href="/en/book_page.html"><div class="ANG"> EN </div></a>
+</div>
+
 </nav>
     </header>
+
 <main>
-    <div class="accueil"><a href="/index.html">
-        <button class="home">
-          <img src="./public/img/back_home.svg" alt="logo_menu">
-        </button>
+    <a href="/en/home_page.html">
+        <article class="accueil">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
         
-      </a></div>
+      </article>
+      </a>
 
 <h1> Journey to the center of the Earth</h1>
 <h2> An author like no other :  </h2>
     <p class="texte1">Journey to the Center of the Earth is a science fiction novel written by French author Jules Verne in 1864. The story follows the fictional character of student Otto Lidenbrock on a journey to the center of the Earth. Along the way, he learns about the natural and supernatural history of our planet. Some readers have compared Journey to the Center of the Earth to a video game as it transports its readers into another world.
 
       </p>
-    <img class="img_livre_1" src="./public/img/img_livre_1.webp" alt="image_livre">
+    <img class="img_livre_1" src="/public/img/img_livre_1.webp" alt="image_livre">
 
-    <br></br>
+    
 
 <h2> An International trip : </h2>
     <p class="texte2">To help his readers imagine this journey, Verne used geography to give them a sense of place. He based the setting of his characters on his readers' geographical knowledge of the ancient cultures of Europe. For example, he set his novel in Germany since that is where many German scholars studied ancient Greece at that time. He also based his characters' destination on a geological feature known as the Rhine Rift Valley. This is a huge geological formation that runs through parts of northeastern France and parts of western Germany, extending over 100 miles long and over 20 miles wide. By anchoring his characters' journeys in such recognizable geographical features, Verne made it easy for his readers to mentally follow their character's travels.
 
       </p>
-    <img class="img_livre_2" src="./public/img/img_livre_2.webp" alt="image_disque_album">
+    <img class="img_livre_2" src="/public/img/img_livre_2.webp" alt="image_disque_album">
 
-    <br></br>
+   
 
 <h2> A reflective metaphor :  </h2>
     <p class="texte3">In addition to its inventive setting and dialogue, Jules Verne's Journey to the Center of the Earth is notable for its realistic depictions of natural history and mythology. It encourages audience members to think about geology by placing its events in recognizable geographical features and familiar personalities. In addition, some of the metaphors previously associated with science fiction are overturned by Jules Verne's intelligent thinking, allowing people to discover both inside and outside the central body of the Earth.
 
       </p>
-    <img class="img_livre_3" src="./public/img/img_livre_3.webp" alt="image_dragon_ballz">
+    <img class="img_livre_3" src="/public/img/img_livre_3.webp" alt="image_dragon_ballz">
 
 </main>
 <footer class="footer">
-    <div class="frang">
-      <div class="FR"> FR </div>
-      <div class="ANG"> ANG </div>
-    </div>
-    <div class="adresse">
-    <p class="mailto">Mailto :</p>
-    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  <div class="frang">
+    <a class="lienFREN" href="/page_livre.html"><div class="FR"> FR </div></a>
+  <a class="lienFREN" href="/en/book_page.html"><div class="ANG"> EN </div></a>
   </div>
+  <div class="adresse">
+  <p class="mailto">Mailto :</p>
+  <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+</div>
   <p class="mention">Disclaimer : </p>
-  <p class="legal">Project carried out as part of an educational exercise in the<a href="MMi de Montbéliard"> MMi de Montbéliard</a></p> 
-   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><img class="logommi"  src="./public/img/picto-mmi.svg" alt="logo_MMi_Montbeliard"></div>
-  </footer>
-
-
-
-
+  <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+ <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+</footer>
     
+
 </body>
+
 </html>
+    

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/page article.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="/public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - Uranus </a></li>
+        
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_espoir.html"><div class="FR"> FR </div></a>
+  <a href="/en/hope_page.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/en/home_page.html">
+        <article class="accueil">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+
+      <h1> Travel progress </h1>
+      <h2> The origin of creation</h2>
+          <p class="texte1">For centuries, philosophers have discussed the merits of travel for educational purposes and personal growth.
+            They also debated whether traveling made you a better person or just exposed you to new ideas.
+            While some people criticize long-distance travel as unproductive, there's no denying that seeing new places broadens the mind.
+            Additionally, travel helps people learn a variety of languages ​​and customs, which helps them acclimate to new environments.  </p>
+          <img class="img_esp_1" src="/public/img/img_espoir_1.webp" alt="image avion">
+      
+          
+      
+      <h2> Complicated journeys </h2>
+          <p class="texte2">Before the invention of the airplane, long-distance travel was difficult for the middle class due to cost and time constraints.
+            For example, American citizens had only short trips abroad via Ellis Island in the early 20th century. Even then, travelers had few options for long-distance exploration except for sea voyages or walking across country borders.
+            Also, the trains only went as far as the towns before stopping; therefore, they were unable to take people as far as desired destinations. </p>
+          <img class="img_esp_2" src="/public/img/img_espoir_2.webp" alt="image train">
+      
+          
+      
+      <h2> New technologies </h2>
+          <p class="texte3">oday people can travel far and fast thanks to modern technology.
+            Communications technology allows people from different parts of the world to talk to each other without geographical barriers slowing them down.
+            In addition, vehicles are now fast enough to cross national borders without stopping. Plus, planes can now go farther than ever before at much faster speeds.
+            Everyone has gotten used to being able to enjoy these luxuries, but it's easy to forget just how much these advancements mean when trying to plan a vacation.</p>
+          <img class="img_esp_3" src="/public/img/img_espoir_3.webp" alt="image avion">
+      
+      </main>
+      <footer class="footer">
+        <div class="frang">
+          <a class="lienFREN" href="/page_espoir.html"><div class="FR"> FR </div></a>
+        <a class="lienFREN" href="/en/hope_page.html"><div class="ANG"> EN </div></a>
+        </div>
+        <div class="adresse">
+        <p class="mailto">Mailto :</p>
+        <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+      </div>
+        <p class="mention">Disclaimer : </p>
+        <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+       <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+      </footer>
+          
+      
+      </body>
+      
+      </html>
