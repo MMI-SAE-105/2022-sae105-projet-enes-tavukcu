@@ -31,3 +31,48 @@ h1{
     line-height: 15px;
     padding-bottom: 15px;
 }
+
+h3{
+    text-align: center;
+    font-family: 'Zilla Slab';
+    
+}
+.auteur{
+    text-align: center;
+    font-family: 'Zilla Slab';
+}
+.imgsite1{
+    
+    height: 180px;
+    
+}
+.site{
+    border: 2px solid;
+    margin: 15px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.gosite{
+    text-align: center;
+    color:black;
+    text-decoration: none;
+    
+    font-family: 'Zilla Slab';
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+
+
+align-items: center;
+
+color: #000000;
+
+border: 2px solid #000000;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+margin-left: 140px;
+width: max-content;
+}

@@ -1,61 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/css/page article.css">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/autrespages.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
 </head>
-<body>
-    <header class="header">
-        <p>Trav-All</p>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+      <img class="header__logo" src="/public/img/logo projet 2.svg">
+    <p class="Nomsite">Trav-All</p>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/page_musique.html"> PNL - 91's </a></li>
         
-          <img src="./public/img/menu 1.svg" alt="logo_menu">
-        
-      </header>
+        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
+        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
+        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+    <li class="liste_autre"><a href="/Glossaire.html"> Glossaire </a> </li>
+  <li class="liste_autre"><a href="/page_AutreProjets.html"> Autres projets </a> </li>
+  <li class="liste_autre"><a href="/Apropos.html"> A propos </a> </li>
+  <li class="liste_autre"><a href="/page_contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/Glossaire.html"><div class="FR"> FR </div></a>
+  <a href="/en/Glossary.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
 <main>
-    <img src="./public/img/home 1.webp" alt="logo_accueil">
-    <p> Accueil </p>
-    <br></br>
-    <br></br>
+    <a href="/index.html">
+        <article class="accueil">
+          
+          <img src="/public/img/back_home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
 <h1> Autres projets </h1>
 
-    <h2> Un Autre Monde </h2>
-    <p>Auteur : Enzo Tournoux</p>
-<br></br>
-    <h2> Génocide caché </h2>
-    <p>Auteur : Oliventhan Thamilsevan</p>
-<br></br>
-    <h2> Réminiscence </h2>
-    <p>Auteur : Zoé Schoellhammer</p>
-<br></br>
-    <h2> Advancing technology </h2>
-    <p>Auteur : Maxime Ruchet</p>
-<br></br>
-    <h2> Ne m’oublie pas </h2>
-    <p>Auteur : Samantha Saffache</p>
-<br></br>
-    <h2> Reboot </h2>
-    <p>Auteur : Atnan Tas</p>
-<br></br>
-    <h2> Past Life </h2>
-    <p>Auteur : Kubilay Yardimli</p>
-<br></br>
-    <h2> Society Mind </h2>
-    <p>Auteur : Emma Wettle</p>
+<div class="site">
+  <a href="http://reminiscence.zoeschoellhammer.fr/">
+    <h3> Réminiscience </h3>
+    <p class="auteur">Auteur : Zoé Schoellhamer</p>
+    <img class="imgsite1" src="/public/img/SiteZoe_1.webp">
+    <p class="gosite"> Voir site </p>
+  </a>
+</div>
+
+<div class="site">
+    <a href="http://genocide-cache.thamilselvan.fr/">
+      <h3> Génocide caché </h3>
+      <p class="auteur">Auteur : Oliventhan Thamilselvan</p>
+      <img class="imgsite1" src="/public/img/SiteOli_1.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="https://societymind.emmawettle.fr/">
+      <h3> Society Mind </h3>
+      <p class="auteur">Auteur : Emma Wettle</p>
+      <img class="imgsite1" src="/public/img/SiteEmma_1.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="http://nemoubliepas.samanthasaffache.fr/">
+      <h3> Ne m'oublie pas </h3>
+      <p class="auteur">Auteur : Samantha Saffache</p>
+      <img class="imgsite1" src="/public/img/SiteSamantha.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="https://reboot.atnantas.fr/">
+      <h3> Reboot </h3>
+      <p class="auteur">Auteur : Atnan Tas</p>
+      <img class="imgsite1" src="/public/img/SiteAtnan.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="https://pastlife.kubilayyardimli.fr/">
+      <h3> Past Life </h3>
+      <p class="auteur">Auteur : Kubilay Yardimli</p>
+      <img class="imgsite1" src="/public/img/SiteKubilay.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="http://reminiscence.zoeschoellhammer.fr/">
+      <h3> La Guerre </h3>
+      <p class="auteur">Auteur : Youssef Wali</p>
+      <img class="imgsite1" src="/public/img/SiteYoussef_1.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
+
+  <div class="site">
+    <a href="https://memories.angelo-simoes.fr/">
+      <h3> Memories </h3>
+      <p class="auteur">Auteur : Angelo Simoes</p>
+      <img class="imgsite1" src="/public/img/SiteAngelo.webp">
+      <p class="gosite"> Voir site </p>
+    </a>
+  </div>
 </main>
 
 <footer class="footer">
-        <p>FR ANG</p>
-        <p >Mailto :</p>
-        <p><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
-        <p>Mention légale: </p>
-        <p>Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="MMi de Montbéliard "> MMi de Montbéliard</a></p>
-       <article> <p>Enes TAVUKCU - MMI</p><img src="./public/img/picto-mmi 1.svg" alt="logo_MMi_Montbeliard"></article>
-      </footer>
+    <div class="frang">
+      <a class="lienFREN" href="/index.html"><div class="FR"> FR </div></a>
+    <a class="lienFREN" href="/en/home_page.html"><div class="ANG"> EN </div></a>
+    </div>
+    <div class="adresse">
+    <p class="mailto">Mailto :</p>
+    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  </div>
+    <p class="mention">Mention légale : </p>
+    <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a></p>
+   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="./public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+  </footer>
 
 
 </body>
