@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/autrespages.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="/public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - 91's </a></li>
+        
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_AutreProjets.html"><div class="FR"> FR </div></a>
+  <a href="/en/Other_Projects.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/en/home_page.html">
+        <article class="accueil2">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+
+      <h1> Other Projects </h1>
+
+      <div class="site">
+        <a href="http://reminiscence.zoeschoellhammer.fr/">
+          <h3> Réminiscience </h3>
+          <p class="auteur">Author : Zoé Schoellhamer</p>
+          <img class="imgsite1" src="/public/img/SiteZoe_1.webp">
+          <p class="gosite"> See website </p>
+        </a>
+      </div>
+      
+      <div class="site">
+          <a href="http://genocide-cache.thamilselvan.fr/">
+            <h3> Génocide caché </h3>
+            <p class="auteur">Author : Oliventhan Thamilselvan</p>
+            <img class="imgsite1" src="/public/img/SiteOli_1.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="https://societymind.emmawettle.fr/">
+            <h3> Society Mind </h3>
+            <p class="auteur">Author : Emma Wettle</p>
+            <img class="imgsite1" src="/public/img/SiteEmma_1.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="http://nemoubliepas.samanthasaffache.fr/">
+            <h3> Ne m'oublie pas </h3>
+            <p class="auteur">Author : Samantha Saffache</p>
+            <img class="imgsite1" src="/public/img/SiteSamantha.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="https://reboot.atnantas.fr/">
+            <h3> Reboot </h3>
+            <p class="auteur">Author : Atnan Tas</p>
+            <img class="imgsite1" src="/public/img/SiteAtnan.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="https://pastlife.kubilayyardimli.fr/">
+            <h3> Past Life </h3>
+            <p class="auteur">Author : Kubilay Yardimli</p>
+            <img class="imgsite1" src="/public/img/SiteKubilay.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="http://reminiscence.zoeschoellhammer.fr/">
+            <h3> La Guerre </h3>
+            <p class="auteur">Author : Youssef Wali</p>
+            <img class="imgsite1" src="/public/img/SiteYoussef_1.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      
+        <div class="site">
+          <a href="https://memories.angelo-simoes.fr/">
+            <h3> Memories </h3>
+            <p class="auteur">Author : Angelo Simoes</p>
+            <img class="imgsite1" src="/public/img/SiteAngelo.webp">
+            <p class="gosite"> See website </p>
+          </a>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="frang">
+          <a class="lienFREN" href="/page_AutreProjets.html"><div class="FR"> FR </div></a>
+        <a class="lienFREN" href="/en/Other_Projects.html"><div class="ANG"> EN </div></a>
+        </div>
+        <div class="adresse">
+        <p class="mailto">Mailto :</p>
+        <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+      </div>
+        <p class="mention">Disclaimer : </p>
+        <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+       <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+      </footer>
+          
+      
+      </body>
+      
+      </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/autrespages.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+        <a class="retoursite" href="index.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="./public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/page_musique.html"> PNL - 91's </a></li>
+        
+        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
+        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
+        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+    <li class="liste_autre"><a href="/Glossaire.html"> Glossaire </a> </li>
+  <li class="liste_autre"><a href="/page_AutreProjets.html"> Autres projets </a> </li>
+  <li class="liste_autre"><a href="/Apropos.html"> A propos </a> </li>
+  <li class="liste_autre"><a href="/page_contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/page_AutreProjets.html"><div class="FR"> FR </div></a>
+  <a href="/en/Other_Projects.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/index.html">
+        <article class="accueil2">
+          
+          <img src="/public/img/back_home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+<h1> A propos </h1>
+
+<h3> Qui sommes-nous ?</h3>
+
+<p class="txt1"> Je m’appelle Enes , je suis étudiant au sein du département MMi de Montbéliard.<br>
+    Je suis en 1ère année de BUT et j’ai réalisé ce site pour mon projet du 1er semestre.</p>
+
+<hr class="ligne">
+
+<h3> Notre département</h3>
+
+<p class="txt1"> Le département MMi se situe au sein de l'aire urbaine de Belfort-Montbéliard, l'IUT comprend une dizaine de département réparties sur ces deux villes.<br>Notre département est situé sur le Pôle Universitaire du Portes du Jura à Montbéliard.</p>
+
+
+
+</main>
+
+<footer class="footer">
+    <div class="frang">
+      <a class="lienFREN" href="/page_AutreProjets.html"><div class="FR"> FR </div></a>
+    <a class="lienFREN" href="/en/Other_Projects.html"><div class="ANG"> EN </div></a>
+    </div>
+    <div class="adresse">
+    <p class="mailto">Mailto :</p>
+    <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+  </div>
+    <p class="mention">Mention légale : </p>
+    <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a></p>
+   <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="./public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+  </footer>
+
+
+</body>
+</html>

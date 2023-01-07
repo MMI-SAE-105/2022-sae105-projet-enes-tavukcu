@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reboot">
+    <title>Trav-All</title> 
+    
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/autrespages.css">
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
+    
+    
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header__menu">
+        <a class="retoursite" href="/en/home_page.html">
+            <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+         <p class="Nomsite">Trav-All</p>
+       </a>
+    <button @click="menuIsOpen = !menuIsOpen"
+    class="header_menuBtn"
+    aria-controle="mainNav">
+      <img src="/public/img/menu.svg" alt="logo_menu">
+    </button> </div>  
+<nav 
+x-show="menuIsOpen"
+id="mainNav"
+        x-transition.duration.650ms
+        class="menu">
+        <div class="article_menu"><p class="article"> Articles </p>
+    <ul class="nom_article">
+        <li class="liste"><a href="/en/place_page.html"> Iles Galapagos </a></li>
+        <li class="liste"><a href="/en/music_page.html"> PNL - 91's </a></li>
+        
+        <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
+    </ul>
+  </div>
+  <hr class="ligne_menu">
+  <div class="autre">
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
+</div>
+<div class="fren_menu">
+  <a href="/Glossaire.html"><div class="FR"> FR </div></a>
+  <a href="/en/Glossary.html"><div class="ANG"> EN </div></a>
+</div>
+
+</nav>
+    </header>
+
+<main>
+    <a href="/en/home_page.html">
+        <article class="accueil2">
+          
+          <img src="/public/img/home.svg" alt="logo_menu">
+        
+      </article>
+      </a>
+
+      <h1> Glossary </h1>
+
+      <div class="def">
+          <p class="nomDef">Acclimatize : </p> 
+          <p class="texteDef">Acclimatization refers to the physiological adaptation of a living organism transposed to a geographical region different from its area of ​​origin.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Canton : </p> 
+          <p class="texteDef">A township is a type of lower-level territory than a state.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Cloud rap : </p> 
+          <p class="texteDef">Also called trillwave, is a subgenre of rap, characterized in particular by a musical structure that is slower and more airy than traditional rap.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Certification disc : </p> 
+          <p class="texteDef">A certification record is an award given to an artist to highlight that an album or single has sold a certain number of copies.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Scholar : </p> 
+          <p class="texteDef">Synonym of scholar.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Land Iguana : </p> 
+          <p class="texteDef">A unique reptilian because it is found only in the Galapagos Islands.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Unproductive : </p> 
+          <p class="texteDef">Who does not produce, does not bring anything.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Label : </p> 
+          <p class="texteDef">Record production company.</p>
+      </div>
+      
+      <div class="def">
+          <p class="nomDef">Premature death : </p> 
+          <p class="texteDef">The premature mortality rate is an indicator that reflects the state of health of a population.</p>
+      </div>
+      
+      <div class="defA">
+          <p class="nomDef">Science fiction : </p> 
+          <p class="texteDef">Literary and artistic genre that describes a future state of the world by extrapolating data from science or technology.</p>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="frang">
+          <a class="lienFREN" href="/Glossaire.html"><div class="FR"> FR </div></a>
+        <a class="lienFREN" href="/en/Glossary.html"><div class="ANG"> EN </div></a>
+        </div>
+        <div class="adresse">
+        <p class="mailto">Mailto :</p>
+        <p class="mail"><a href="mailto:enestavukcu2525@gmail.com">enestavukcu2525@gmail.com</a></p>
+      </div>
+        <p class="mention">Disclaimer : </p>
+        <p class="legal">Project carried out as part of an educational exercise in the<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a> department</p>
+       <div class="MMI"> <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/"><img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard"></a></div>
+      </footer>
+          
+      
+      </body>
+      
+      </html>
+      

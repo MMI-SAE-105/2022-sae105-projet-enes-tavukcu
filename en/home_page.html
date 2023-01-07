@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="stylesheet" href="/src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <style></style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
+      </style>
+    
     
     
     
@@ -21,8 +24,10 @@
 <body class="body">
   <header class="header">
     <div class="header__menu">
-      <img class="header__logo" src="/public/img/logo projet 2.svg">
-    <p class="Nomsite">Trav-All</p>
+      <a class="retoursite" href="/en/home_page.html">
+        <img class="header__logo" src="/public/img/logosite2-removebg-preview.png">
+     <p class="Nomsite">Trav-All</p>
+   </a>
     <button @click="menuIsOpen = !menuIsOpen"
     class="header_menuBtn"
     aria-controle="mainNav">
@@ -39,17 +44,17 @@ id="mainNav"
         <li class="liste"><a href="/en/music_page.html"> PNL - 91's </a></li>
         
         <li class="liste_f"><a href="/en/movie_page.html"> Doctor Strange: In The Multiverse of Madness </a></li>
-        <li class="liste"><a href="/en/book_page.html"> Voyage au centre de la Terre </a></li>
-        <li class="liste"><a href="/en/regret_page.html"> Pollution dû aux voyages </a></li>
-        <li class="liste"><a href="/en/hope_page.html"> Progès des voyages </a></li>
+        <li class="liste"><a href="/en/book_page.html"> Journey to the Center of the Earth </a></li>
+        <li class="liste"><a href="/en/regret_page.html"> Travel pollution </a></li>
+        <li class="liste"><a href="/en/hope_page.html"> Travel progress </a></li>
     </ul>
   </div>
   <hr class="ligne_menu">
   <div class="autre">
-  <li class="liste_autre"><a href="/en/Glossary.html"> Glossaire </a> </li>
-  <li class="liste_autre"><a href="/page_AutreProjets.html"> Autres projets </a> </li>
-  <li class="liste_autre"><a href="/Apropos.html"> A propos </a> </li>
-  <li class="liste_autre"><a href="/page_contact.html"> Contact </a> </li>
+  <li class="liste_autre"><a href="/en/Glossary.html"> Glossary </a> </li>
+  <li class="liste_autre"><a href="/en/Other_Projects.html"> Other projects </a> </li>
+  <li class="liste_autre"><a href="/en/AboutUs.html"> About us </a> </li>
+  <li class="liste_autre"><a href="/en/Contact.html"> Contact </a> </li>
   
 </div>
 <div class="fren_menu">

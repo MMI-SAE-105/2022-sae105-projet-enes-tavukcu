@@ -1,7 +1,7 @@
 - NOM : Tavukcu
 - PRÉNOM : Enes
-- URL du site :
-- URL FIGMA :
+- URL du site : http://travall.enestavukcu.fr/index.html
+- URL FIGMA : https://www.figma.com/file/jZ0itgTJzxD7lcECnBoWQ8/Maquettes-projet-individuel-%E2%80%94-pr%C3%A9nom-NOM-(Copy)?node-id=867%3A859&t=Vgx1z35kO1awDW7f-0
 
 # Structure de départ pour le projet individuel.
 
