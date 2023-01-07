@@ -43,7 +43,7 @@ footer a {
     display: flex;
     gap: var(--space3x);
     align-items: center;
-    margin-left: 180px;
+    margin-left: 65px;
     padding-bottom: 5px;
 }
 .nom{
@@ -51,5 +51,9 @@ footer a {
 }
 .logommi{
     height: 70px;
+}
+.contact{
+    display: flex;
+    justify-content: end;
 }
 

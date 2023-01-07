@@ -37,6 +37,15 @@ h2{
 .lienDef{
     color: #2178A9;
 }
+.img_s{
+    line-height: 1;
+}
+.source{
+   line-height: 0; 
+   margin-bottom: 40px;
+   margin-left: 30px;
+   font-family: 'Zilla Slab';
+}
 .texte1{
     margin:  auto;
   display: block;
@@ -358,6 +367,8 @@ text-align: left;
     margin:  auto;
     padding-bottom: 30px;
 }
+
+
 
 
 
