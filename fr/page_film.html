@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Reboot">
     <title>Trav-All</title> 
-    <link rel="stylesheet" href="src/css/page_article.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="/src/css/page_article.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     
+    <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
     <script src="https://unpkg.com/alpinejs" defer></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Zilla+Slab&display=swap');
@@ -30,7 +30,7 @@
     <button @click="menuIsOpen = !menuIsOpen"
     class="header_menuBtn"
     aria-controle="mainNav">
-      <img src="./public/img/menu.svg" alt="logo_menu">
+      <img src="/public/img/menu.svg" alt="logo_menu">
     </button> </div>  
 <nav 
 x-show="menuIsOpen"
@@ -39,26 +39,27 @@ id="mainNav"
         class="menu">
         <div class="article_menu"><p class="article"> Articles </p>
     <ul class="nom_article">
-        <li class="liste"><a href="/page_lieu.html"> Iles Galapagos </a></li>
-        <li class="liste"><a href="/page_musique.html"> PNL - Uranus </a></li>
-        
-        <li class="liste_f"><a href="/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
-        <li class="liste"><a href="/page_livre.html"> Voyage au centre de la Terre </a></li>
-        <li class="liste"><a href="/page_regret.html"> Pollution dû aux voyages </a></li>
-        <li class="liste"><a href="/page_espoir.html"> Progès des voyages </a></li>
+      <li class="liste"><a href="/fr/page_lieu.html"> Iles Galapagos </a></li>
+      <li class="liste"><a href="/fr/page_musique.html"> PNL - Uranus </a></li>
+      
+      <li class="liste_f"><a href="/fr/page_film.html"> Doctor Strange: In The Multiverse of Madness </a></li>
+      <li class="liste"><a href="/fr/page_livre.html"> Voyage au centre de la Terre </a></li>
+      <li class="liste"><a href="/fr/page_regret.html"> Pollution dû aux voyages </a></li>
+      <li class="liste"><a href="/fr/page_espoir.html"> Progès des voyages </a></li>
     </ul>
   </div>
   <hr class="ligne_menu">
   <div class="autre">
     <ol>
-      <li class="liste_autre"><a href="/Glossaire.html"> Glossaire </a> </li>
-  <li class="liste_autre"><a href="/page_AutreProjets.html"> Autres projets </a> </li>
-  <li class="liste_autre"><a href="/Apropos.html"> A propos </a> </li>
-  <li class="liste_autre"><a href="/page_contact.html"> Contact </a> </li>
+      <li class="liste_autre"><a href="/fr/Glossaire.html"> Glossaire </a> </li>
+  <li class="liste_autre"><a href="/fr/page_AutreProjets.html"> Autres projets </a> </li>
+  <li class="liste_autre"><a href="/fr/Apropos.html"> A propos </a> </li>
+  <li class="liste_autre"><a href="/fr/page_contact.html"> Contact </a> </li>
     </ol>
+  
 </div>
 <div class="fren_menu">
-  <a href="/page_film.html"><div class="FR"> FR </div></a>
+  <a href="/fr/page_film.html"><div class="FR"> FR </div></a>
   <a href="/en/movie_page.html"><div class="ANG"> EN </div></a>
 </div>
 
@@ -72,7 +73,7 @@ id="mainNav"
       <img src="/public/img/back_home.svg" alt="logo_menu">
     
     </div>
-</a>
+  </a>
 
     <h1> Doctor Strange : In the Multiverse of Madness </h1>
      <h2> Marvel Studios </h2>
@@ -136,7 +137,7 @@ id="mainNav"
 </main>
 <footer class="footer">
   <div class="frang">
-    <a class="lienFREN" href="/page_film.html"><div class="FR"> FR </div></a>
+    <a class="lienFREN" href="/fr/page_film.html"><div class="FR"> FR </div></a>
   <a class="lienFREN" href="/en/movie_page.html"><div class="ANG"> EN </div></a>
   </div>
   <div class="adresse">
@@ -146,16 +147,16 @@ id="mainNav"
   <p class="mention">Mention légale : </p>
   <p class="legal">Projet réalisé dans le cadre d'un exercice pédagogique au département<a href="http://mmimontbeliard.com/"> MMi de Montbéliard</a></p>
   <div class="contact" >
-    <a href="https://www.instagram.com/enesss.25/"><img src="public/img/instagram.svg" alt="insta" style="margin: 10px;"></a>
+    <a href="https://www.instagram.com/enesss.25/"><img src="/public/img/instagram.svg" alt="insta" style="margin: 10px;"></a>
     <a href="https://www.linkedin.com/in/enes-tavuk%C3%A7u-937b82257/"><img src="/public/img/linkedin.svg" alt="linkedin" style="margin: 10px;"></a>
     <div class="MMI"> 
       <p class="nom">Enes TAVUKCU - MMI</p><a href="http://mmimontbeliard.com/">
-        <img class="logommi"  src="./public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard">
+        <img class="logommi"  src="/public/img/MMI_dut_small_purple.png" alt="logo_MMi_Montbeliard">
       </a>
     </div>
   </div>
 </footer>
 
-    
+
 </body>
 </html>
