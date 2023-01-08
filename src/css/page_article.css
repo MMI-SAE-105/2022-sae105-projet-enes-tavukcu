@@ -40,9 +40,7 @@ h2{
 }
 .img_s{
     line-height: 1;
-    justify-content: center;
     display: flex;
-    align-items: flex-start;
     width: max-content;
     flex-direction: column;
     margin: auto;
