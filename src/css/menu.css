@@ -12,11 +12,7 @@
   font-family: 'Zilla Slab';
   font-size: 16px;
 }
-.liste_f{
-  font-family: 'Zilla Slab';
-  font-size: 16px;
-  line-height: 1;
-}
+
 .liste_autre{
   font-family: 'Zilla Slab';
   font-size: 18px;
@@ -58,5 +54,5 @@ li::marker {
   color: #f0f0f0;
 }
 .nom_article{
-  line-height: 2.5;
+  line-height: 2.2;
 }
